@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pasteleria - cliente</title>
+</head>
+<style>
+
+    html,
+    body {
+        min-height: 100%;
+    }
+
+    .encabezado0 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .encabezado {
+        font-size: 25px;
+    }
+
+    .nombre {
+        font-size: 35px;
+        font-style: italic;
+    }
+
+    .contenedorFormulario {
+        padding-top: 20px;
+        border-radius: 40px;
+        width: 20%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input {
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    .entradaDeTexto {
+        width: 250px;
+        ;
+    }
+
+    #btnEnviarPedido {
+        border-radius: 3px;
+        margin: 5px;
+        background-color: #1548ec;
+        color: white;
+        width: 80px;
+        height: 25px;
+    }
+
+    #logo {
+        border-radius: 50%;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+        background: floralwhite;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+
+<body style="display: flex;
+flex-direction: column;
+align-items: center;">
+    <div class="encabezado0">
+        <img src="logo.jpg" width="200px" height="200px" id="logo" />
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <div class="contenedorFormulario">
+                <form>
+                    <label class="encabezado">Elija su pastel</label><br><br>
+                    <label>Sabores</label><br>
+                    <div style="display: flex;
+                    align-items: stretch;">
+                        <input type="checkbox">
+                        <label for="fresa">Fresa $100</label>
+                        <input type="checkbox">
+                        <label for="chocolate">Chocolate $150</label>
+                        <input type="checkbox">
+                        <label for="vainilla">Limon $90</label><br><br>
+                    </div>
+                    <label>Decoraciones</label><br>
+                    <div style="display: flex;
+                    align-items: stretch;">
+                        <input type="checkbox">
+                        <label for="fruta">Fruta $100</label>
+                        <input type="checkbox">
+                        <label for="Caramelos">Caramelos $100</label><br><br>
+                        <label for="Caramelos">Mis datos</label><br>
+                    </div>
+                    
+                    
+                    
+        
+                    <input placeholder="Nombre" class="entradaDeTexto" /><br>
+                    <input placeholder="Telefono" class="entradaDeTexto" /><br>
+                    <input placeholder="Correo electronico" class="entradaDeTexto" /><br>
+                    <input type="text" style="width: 250px; height: 100px;" placeholder="Descripcion del pastel" /><br>
+                    <button type="submit" id="btnEnviarPedido">Enviar</button>
+        
+                </form>
+            </div>
+        </div>
+      </div>
+   
+</body>
+
+</html>
