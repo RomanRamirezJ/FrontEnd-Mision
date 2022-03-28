@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">Vaccination</a>
+        <ul>
+            <li><a class="nav__item" href="#servicios">Database</a></li>
+            <li><a class="nav__item" href="#porquenosotros">Education</a></li>
+            <li><a class="nav__item" href="#destacar">News</a></li>
+            <li><a class="nav__item" href="#contactanos">Regulation</a>
+            <li><a class="nav__itemButton" href="#contactanos">Hox Buster</a>
+            </li>
+        </ul>
+    </header>
+    <section class="section__difuminada">
+        <div class="section__difuminada__text"></div>
+        <div class="section__difuminada__image"></div>
+    </section>
+    <section class="section__main">
+        <div class="section__main__text">
+            <div class="contenedor">
+                <div></div>
+                <h1>
+                    Fight Virus <br>With Vaccines
+                </h1>
+                <p class="subtitle">
+                    let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get
+                    infected
+                </p>
+                <div>
+                    <ul class="list__iconos">
+                        <li><a href="#"><span class="material-icons icon__yellow">
+                                    verified_user
+                                </span><span>Best protection</span></a></li>
+                        <li><a href="#"><span class="material-icons icon__yellow">
+                                    star
+                                </span><span>Selected Vaccines</span></a></li>
+                    </ul>
+
+
+                </div>
+                <div></div>
+                <div class="schedule">
+                    <span class="material-icons icon__blue">
+                        watch_later
+                    </span>
+                    <p>Schedule your vaccinations</p>
+                </div>
+
+                <div>
+                    <div class="scheduleForm">
+                        <div class="labelForm">
+                            <div class="labelForm">
+                                <div class="">
+                                    <div class="labelFormText">
+                                        <span class="material-icons icon__blue">
+                                            location_on
+                                        </span>
+                                        <p>Location</p>
+                                    </div>
+                                    <div class="labelFormData">
+                                        <p>Jakarta Utara</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="labelFormText">
+                                        <span class="material-icons icon__blue">
+                                            date_range
+                                        </span>
+                                        <p>Date</p>
+                                    </div>
+                                    <div class="labelFormData">
+                                        <p>08 July 2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="labelFormText">
+                                        <span class="material-icons icon__blue">
+                                            drive_file_rename_outline
+                                        </span>
+                                        <p>Vaccine Type</p>
+                                    </div>
+                                    <div class="labelFormData">
+                                        <p>Moderna</p>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                               
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav__itemButton">Submit</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="section__main__image">
+            <img src="image/img1.jpg" alt="img1">
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgBx">
+                    <img class="pokemon" id="pokemon"
+                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Logo-Pokebola-Pok%C3%A9mon-PNG.png"
+                        alt="imagen">
+                    <h2 class="nombrePokemon" id="nombrePokemon"></h2>
+                </div>
+                <div class="content">
+                    <div class="type">
+                        <div>
+                            <h3>Type</h3>
+                        </div>
+                        <div id="tipoPokemon">
+                        </div>
+
+                    </div>
+                    <div class="move">
+                        <div>
+                            <h3>Moves</h3>
+                        </div>
+                        <div id="movimientos">
+                        </div>
+
+                    </div>
+                    <div class="move">
+                        <div>
+                            <h3>Stats</h3>
+                        </div>
+                        <div id="stats">
+                        </div>
+
+                    </div>
+                    <!-- <a href="#google" id="btnabrir">See all</a> -->
+                </div>
+            </div>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search pokemon" id="pokeName" onkeypress="fetchPokemon(event)">
+                </div>
+                <span class="clear"></span>
+            </div>
+        </div>
+
+    </section>
+    <div id="google" class="modaloverlay">
+        <div class="modal">
+          <a href="#close" class="close">&times;</a>
+          <div>
+            <div class="card">
+                <div class="imgBx">
+                    <img class="pokemon" id="pokemonCompleto"
+                        src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Logo-Pokebola-Pok%C3%A9mon-PNG.png"
+                        alt="imagen">
+                    <h2 class="nombrePokemon" id="nombrePokemonCompleto"></h2>
+                </div>
+                <div class="contentCompleto">
+                    <div class="typeCompleto">
+                        <div>
+                            <h3>Type</h3>
+                        </div>
+                        <div id="tipoPokemonCompleto">
+                        </div>
+
+                    </div>
+                    <div class="moveCompleto">
+                        <div>
+                            <h3>Moves</h3>
+                        </div>
+                        <div id="movimientosCompleto">
+                        </div>
+
+                    </div>
+                    <div class="moveCompleto">
+                        <div>
+                            <h3>Stats</h3>
+                        </div>
+                        <div id="statsCompleto">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
